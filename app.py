@@ -143,7 +143,7 @@ if st.session_state.page == "Home":
 
     # Show selected image
     image = Image.open(image_paths[st.session_state.slider_index])
-    st.image(image, caption="Discover Amazing Restaurants!", use_container_width=True)
+    st.image(image, caption="Discover Amazing Restaurants!")
 
     # ✅ Description block
     description = """
@@ -305,7 +305,7 @@ elif st.session_state.page == "Community Storage":
     qr = qrcode.make(f"Unique ID: {unique_id}")
     buffer = BytesIO()
     qr.save(buffer)
-    st.image(buffer.getvalue(), caption="Your Unique QR Code", use_container_width=False)
+    st.image(buffer.getvalue(), caption="Your Unique QR Code")
     st.success(f"QR Code ID: {unique_id}")
 
 #Volunteer
