@@ -85,7 +85,7 @@ if st.sidebar.button("Help Desk"):
 # Home Page
 if st.session_state.page == "Home":
     # ✅ Path to the image
-    top_image_path = r"C:\Users\Anamika\Downloads\images\image4.jpg"
+    top_image_path = "image4.jpg"
     top_image = Image.open(top_image_path)
 
     # ✅ Convert image to bytes for embedding
@@ -125,9 +125,9 @@ if st.session_state.page == "Home":
      
 
     image_paths = [
-        r"C:\Users\Anamika\Downloads\images\image1.jpg",
-        r"C:\Users\Anamika\Downloads\images\image2.jpg",
-        r"C:\Users\Anamika\Downloads\images\image3.jpg"
+        "image1.jpg",
+        "image2.jpg",
+        "image3.jpg"
     ]
 
     if "slider_index" not in st.session_state:
